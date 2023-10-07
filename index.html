@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,12 +9,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
-    <link rel="canonical" href="https://getbootstrap.com/docs/3.3/examples/jumbotron/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/3.3/examples/blog/">
 
-    <title>My First Website</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    <title>Doru Radulescu</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -22,14 +20,16 @@
     <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/custom.css" rel="stylesheet">
-    <style>
+    <link href="css/blog.css" rel="stylesheet">
 
-        .btn-lg {
-          font-size:36px;
-        }
+    <!---Include Open Sans and Lato From Google Fonts--->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@1,600;1,700;1,800&display=swap" rel="stylesheet">
 
-    </style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -42,10 +42,11 @@
     <![endif]-->
   </head>
 
-  <body data-spy="scroll" data-target=".navbar-collapse" data-ofset="50">
+  <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-       <div class="container">
+        <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -53,119 +54,148 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#jumbotron"><img src="images/top-logo.png" alt="One Million Lines" title="One Million Lines"></a>
+          <a class="navbar-brand" href="#">Doru<strong>Radulescu</strong></a>
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
+        <div id="navbar" class="navbar-collapse collapse">
+
           <ul class="nav navbar-nav navbar-right">
-            <li ><a href="#who">WHO WE ARE</a></li>
-            <li><a href="#get-involved">GET INVOLVED</a></li>
-            
+            <li class="active"><a href="../navbar/">Home</a></li>
+            <li class="active"><a href="./">Blog<span class="sr-only">(current)</span></a></li>
+            <li class="active"><a href="../navbar-fixed-top/">Fixed top</a></li>
+            <li class="active"><a href="../navbar-fixed-top/">Fourth li</a></li>            
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div id="jumbotron" class="jumbotron">
+
+    <div id="blog-page">
       <div class="container">
 
-        <h1>Our goal is to inspire<br>Tallahassee to write 1,000,000<br>lines of code_</h1>
-        <p>All over the country people are taking the <strong>HOUR OF CODE</strong> challenge issued by <strong>CODE.org</strong>. Millions of lines of code are being written. In the capital of Florida, Tallahassee, the community is taking the challenge and our goal is to write 1,000,000 lines of code_</p>
-      </style>
-      <div id="mc_embed_signup" class="row">
-        <div class="col-sm-9">
-          <form action="https://yahoo.us11.list-manage.com/subscribe/post?u=5a07a3a06704007bba97ecabb&amp;id=a5ac9dd4f5&amp;f_id=0074b0e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" role="form">
-                  <div class="mc-field-group form-group">
-                    <input type="email" name="EMAIL" class="required email form-control" id="mce-EMAIL" required="" value="" placeholder="Enter email"><span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span></div>
-        </div>
-        <div class="col-sm-3">
-        <div id="mce-responses" class="clear foot">
-            <div class="response" id="mce-error-response" style="display: none;"></div>
-            <div class="response" id="mce-success-response" style="display: none;"></div>
-        </div>
-    <div aria-hidden="true" style="position: absolute; left: -5000px;">
-        /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
-        <input type="text" name="b_5a07a3a06704007bba97ecabb_a5ac9dd4f5" tabindex="-1" value="">
-    </div>
-        <div class="optionalParent">
-            <div class="clear foot">
-                <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-danger btn-lg" value="Join the Fun"><br>
-    </div>
-            </div>
-        </div>
-    </div>
-</form>
-
-</div> 
-        
-        <img src="images/code.png" title="Code.org logo" alt="Code.org">
-      </div>
-    </div>
-
-    <div id="who">
-      <div class="container homepage">
-        <img src="images/academy-brand-med.png" alt="MASSIVE ACADEMY" title="MASSIVE Academy">
-        <h2>Who We Are</h2>
-        <hr>
-        <p>We are <a href="http://www.massiveacademy.us" target="_blank"> MASSIVE Academy</a>. We aim to improve education through both method - effective project-based learning and material - by teaching skills that are applicable to improving your life today</p>
-      </div>
-    </div>
-
-    <div id="get-involved">
-      <div class="container homepage">
-      <h2>Get involved</h2>
-      <hr>
         <div class="row">
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-user fa-stack-1x fa-inverse"></i>
-            </span>
-            <h3>Students</h3>
-            <p>Want to learn how to code? Want to help us get to 1,000,000 lines? Click the button below and we'll let you know how to get involved. </p>
-            <p><a class="btn btn-default" href="images/hero-image.jpg" role="button">Start Learning &raquo;</a></p>
-          </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
-            </span>
-            <h3>Educators</h3>
-            <p>Want to bring this initiative to your school or institution? Awesome! Click the button below and we'll make it happen. </p>
-            <p><a class="btn btn-default" href="http://www.google.com" target="_blank" role="button">Join the initiative &raquo;</a></p>
-         </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-money fa-stack-1x fa-inverse"></i>
-            </span>
-            <h3>Sponsors</h3>
-            <p>We love all the support we get to help host more events, and empower more lives with the knowledge of coding. Click to get involved.</p>
-            <p><a class="btn btn-default" href="https://docs.google.com/forms/d/e/1FAIpQLSeuocXYUxTrBzLE5DtrZvuM-0QRvHQAmY1QEY5iIXVq247Dqw/viewform?usp=sharing" target="_blank" role="button">Give support &raquo;</a></p>
-          </div>
-        </div>
-      </div> <!-- /container -->
-    </div>
-    <hr>
 
-    <footer>
-      <div class="container">
-        <p><img src="images/bottom-logo.png"></p>
-      </div>
+          <div class="col-sm-8 blog-main">
+
+            <div class="blog-post">
+              <h2 class="blog-post-title">Sample blog post</h2>
+              <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
+
+              <p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
+              <hr>
+              <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+              <blockquote>
+                <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              </blockquote>
+              <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+              <h2>Heading</h2>
+              <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+              <h3>Sub-heading</h3>
+              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+              <pre><code>Example code block</code></pre>
+              <p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+              <h3>Sub-heading</h3>
+              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+              <ul>
+                <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+                <li>Donec id elit non mi porta gravida at eget metus.</li>
+                <li>Nulla vitae elit libero, a pharetra augue.</li>
+              </ul>
+              <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
+              <ol>
+                <li>Vestibulum id ligula porta felis euismod semper.</li>
+                <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
+                <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
+              </ol>
+              <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
+            </div><!-- /.blog-post -->
+
+            <div class="blog-post">
+              <h2 class="blog-post-title">Another blog post</h2>
+              <p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></p>
+
+              <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+              <blockquote>
+                <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              </blockquote>
+              <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+              <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+            </div><!-- /.blog-post -->
+
+            <div class="blog-post">
+              <h2 class="blog-post-title">New feature</h2>
+              <p class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></p>
+
+              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+              <ul>
+                <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+                <li>Donec id elit non mi porta gravida at eget metus.</li>
+                <li>Nulla vitae elit libero, a pharetra augue.</li>
+              </ul>
+              <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+              <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
+            </div><!-- /.blog-post -->
+
+            <nav>
+              <ul class="pager">
+                <li><a href="#">Previous</a></li>
+                <li><a href="#">Next</a></li>
+              </ul>
+            </nav>
+
+          </div><!-- /.blog-main -->
+
+          <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+            <div class="sidebar-module sidebar-module-inset">
+              <h4>About</h4>
+              <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+            </div>
+            <div class="sidebar-module">
+              <h4>Archives</h4>
+              <ol class="list-unstyled">
+                <li><a href="#">March 2014</a></li>
+                <li><a href="#">February 2014</a></li>
+                <li><a href="#">January 2014</a></li>
+                <li><a href="#">December 2013</a></li>
+                <li><a href="#">November 2013</a></li>
+                <li><a href="#">October 2013</a></li>
+                <li><a href="#">September 2013</a></li>
+                <li><a href="#">August 2013</a></li>
+                <li><a href="#">July 2013</a></li>
+                <li><a href="#">June 2013</a></li>
+                <li><a href="#">May 2013</a></li>
+                <li><a href="#">April 2013</a></li>
+              </ol>
+            </div>
+            <div class="sidebar-module">
+              <h4>Elsewhere</h4>
+              <ol class="list-unstyled">
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Facebook</a></li>
+              </ol>
+            </div>
+          </div><!-- /.blog-sidebar -->
+
+        </div><!-- /.row -->
+
+      </div><!-- /.container -->
+    </div>
+
+    <footer class="blog-footer">
+      <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+      <p>
+        <a href="#blog">Back to top</a>
+      </p>
     </footer>
 
-    <div id="back-to-top">
-      <a href="#jumbotron"><i class="fa fa-3x fa-chevron-circle-up"></i></a>
-    </div>  
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <script src="js/smoothscroll.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
   </body>
 </html>
